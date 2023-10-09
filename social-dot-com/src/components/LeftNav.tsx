@@ -1,11 +1,14 @@
+"use client";
+import { useState } from "react";
 import Card from "./Card";
 
 export default function LeftNav() {
+  const [activeClass, setActiveClass] = useState(false);
   return (
     <div className="left-section bg-white w-1/4 m-1 rounded-xl">
       <Card>
         <div className="text-gray-400 text-center pb-1">Navigation</div>
-        <div className="flex gap-2 pl-1 py-1">
+        <div className="flex gap-2 pl-1 py-2 bg-blue-600 text-white rounded shadow">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -22,7 +25,7 @@ export default function LeftNav() {
           </svg>
           Home
         </div>
-        <div className="flex gap-2 pl-1 py-1">
+        <div className="flex gap-2 pl-1 py-2 hover:bg-blue-100 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -39,7 +42,7 @@ export default function LeftNav() {
           </svg>
           Friends
         </div>
-        <div className="flex gap-2 pl-1 py-1">
+        <div className="flex gap-2 pl-1 py-2 hover:bg-blue-100 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -56,7 +59,7 @@ export default function LeftNav() {
           </svg>
           Saved Posts
         </div>
-        <div className="flex gap-2 pl-1 py-1">
+        <div className="flex gap-2 pl-1 py-2 hover:bg-blue-100 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -73,7 +76,7 @@ export default function LeftNav() {
           </svg>
           Notifications
         </div>
-        <div className="flex gap-2 pl-1 pt-1 pb-3">
+        <div className="flex gap-2 pl-1 py-2 mb-2 hover:bg-blue-100 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

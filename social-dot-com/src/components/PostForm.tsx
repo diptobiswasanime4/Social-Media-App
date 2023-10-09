@@ -12,7 +12,7 @@ export default function PostForm() {
               className="rounded-full h-16 mr-2"
             />
             <textarea
-              className="pl-1 border rounded-md shadow"
+              className="pl-1 border rounded-md shadow flex-grow"
               placeholder="What's on your mind?"
               name=""
               id=""
